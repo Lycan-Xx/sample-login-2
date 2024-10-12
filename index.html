@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Start</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+
+		body {
+			font-family: 'Roboto', sans-serif;
+			min-height: 100vh;
+			background: linear-gradient(to bottom, #93c5fd, #3b82f6);
+			color: #c3c3c3;
+			background-image: url(image.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		body::before {
+			content: '';
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.613);
+			z-index: -1;
+		}
+
+		.container {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+
+		header {
+			padding: 1rem;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		main {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 0 1rem;
+		}
+
+		h1 {
+			font-size: 5rem;
+			height: 20vh;
+			font-family: monospace;
+			font-weight: bold;
+			margin-bottom: 1rem;
+		}
+
+
+		p {
+			font-size: 2rem;
+			font-family: monospace;
+			height: 10vh;
+			margin-bottom: 2rem;
+		}
+
+
+
+		.btn-start {
+			background-color: transparent;
+			border: 5px solid #00f456;
+			padding: 5px 30px;
+			font-size: 1.5rem;
+			color: #bed3ff;
+			font-weight: 600;
+			border-radius: 10px;
+			transition: 0.5s;
+			cursor: pointer;
+		}
+
+		.btn-start:hover {
+			background-color: #1f56bd;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="bg-image">
+
+		<div class="container">
+
+
+
+			<main>
+				<h1>Welcome to PHP/database class</h1>
+				<p>Click the button to start</p>
+				<a href="welcome.html"><button class="btn btn-start">Start</button></a>
+			</main>
+
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="unified-styles.css">
+</head>
+
+<body>
+	<a href="welcome.html" class="return-button">Home</a>
+	<div class="container dashboard-container">
+		<h1>Welcome to Your Dashboard</h1>
+		<p>Hello, <span id="username"></span>!</p>
+		<div class="dashboard-content">
+			<h2>Your Account Overview</h2>
+			<ul>
+				<li>Profile: 80% complete</li>
+				<li>Last login: Today</li>
+				<li>Account status: Active</li>
+			</ul>
+		</div>
+		<a href="signin.html" class="button logout">Sign out</a>
+	</div>
+
+	<script>
+		// Simple script to get the username from URL parameter
+		const urlParams = new URLSearchParams(window.location.search);
+		const username = urlParams.get('username');
+		document.getElementById('username').textContent = username || 'User';
+	</script>
+</body>
+
+</html>
