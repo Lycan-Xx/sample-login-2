@@ -3,7 +3,7 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-image: url(image.png);
+	background-image: url(assets/image.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
@@ -89,7 +89,7 @@ a {
 
 .button {
 	display: inline-block;
-	padding: 10px 15px;
+	padding: 15px 15px;
 	border-radius: 10px;
 	text-decoration: none;
 	font-weight: bold;
@@ -117,8 +117,8 @@ a {
 	left: 20px;
 	background-color: #007bff;
 	color: white;
-	padding: 10px 15px;
-	border-radius: 5px;
+	padding: 15px 15px;
+	border-radius: 10px;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1rem;
@@ -143,6 +143,7 @@ a {
 	border-radius: 10px;
 	padding: 20px;
 	margin-bottom: 30px;
+	font-family: monospace;
 	position: static;
 
 }
